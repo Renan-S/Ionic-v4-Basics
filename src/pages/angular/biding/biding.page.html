@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Data Binding</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3>{{ value }}</h3>
+  <h3>{{ secondValue }}</h3>
+  <h3>{{ sum() }}</h3><br><br>
+  <ion-item>
+    <ion-label>Name</ion-label>
+    <ion-input type="text" [(ngModel)]="name"></ion-input>
+  </ion-item>
+  {{ name }}
+</ion-content>
