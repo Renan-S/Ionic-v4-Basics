@@ -1,10 +1,14 @@
 <ion-header>
   <ion-toolbar>
     <app-back-button></app-back-button>
-    <ion-title>alert</ion-title>
+    <ion-title>Alert</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-button (click)="showBasicAlert()">Basic alert</ion-button>
+  <ion-button (click)="showPromptAlert()">Prompt alert</ion-button>
+  <ion-button (click)="showConfirmAlert()">Confirm alert</ion-button>
+  <ion-button (click)="showRadioAlert()">Radio alert</ion-button>
+  <ion-button (click)="showCheckAlert()">Check alert</ion-button>
 </ion-content>

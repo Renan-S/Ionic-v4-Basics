@@ -33,9 +33,7 @@ export class ActionSheetPage implements OnInit {
         {
           text: 'Edit',
           icon: 'create',
-          handler: () => {
-            console.log("Clicked on edit");
-          }
+          handler: () => {console.log("Clicked on edit")}
         }
       ],
       backdropDismiss: false //Wont close the sheet when clicked outside
