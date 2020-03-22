@@ -9,6 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomePageModule } from 'src/pages/home/home.module';
+import { BackButtonModule } from './back-button/back-button.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,7 +18,8 @@ import { HomePageModule } from 'src/pages/home/home.module';
     BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule,
-    HomePageModule],
+    HomePageModule,
+    BackButtonModule],
   providers: [
     StatusBar,
     SplashScreen,

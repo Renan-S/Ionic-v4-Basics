@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { BidingPageRoutingModule } from './biding-routing.module';
 
 import { BidingPage } from './biding.page';
+import { BackButtonModule } from 'src/app/back-button/back-button.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    BidingPageRoutingModule
+    BidingPageRoutingModule,
+    BackButtonModule
   ],
   declarations: [BidingPage]
 })

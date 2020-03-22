@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { SpinnerPageRoutingModule } from './spinner-routing.module';
 
 import { SpinnerPage } from './spinner.page';
+import { BackButtonModule } from 'src/app/back-button/back-button.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SpinnerPageRoutingModule
+    SpinnerPageRoutingModule,
+    BackButtonModule
   ],
   declarations: [SpinnerPage]
 })

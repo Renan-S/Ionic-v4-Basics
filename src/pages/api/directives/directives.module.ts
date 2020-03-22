@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { DirectivesPageRoutingModule } from './directives-routing.module';
 
 import { DirectivesPage } from './directives.page';
+import { BackButtonModule } from 'src/app/back-button/back-button.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DirectivesPageRoutingModule
+    DirectivesPageRoutingModule,
+    BackButtonModule
   ],
   declarations: [DirectivesPage]
 })

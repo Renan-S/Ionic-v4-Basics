@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { CardsPageRoutingModule } from './cards-routing.module';
 
 import { CardsPage } from './cards.page';
+import { BackButtonModule } from 'src/app/back-button/back-button.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CardsPageRoutingModule
+    CardsPageRoutingModule,
+    BackButtonModule
   ],
   declarations: [CardsPage]
 })

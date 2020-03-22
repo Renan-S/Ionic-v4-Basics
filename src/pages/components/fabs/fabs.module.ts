@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { FabsPageRoutingModule } from './fabs-routing.module';
 
 import { FabsPage } from './fabs.page';
+import { BackButtonModule } from 'src/app/back-button/back-button.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    FabsPageRoutingModule
+    FabsPageRoutingModule,
+    BackButtonModule
   ],
   declarations: [FabsPage]
 })

@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { AlertPageRoutingModule } from './alert-routing.module';
 
 import { AlertPage } from './alert.page';
+import { BackButtonModule } from 'src/app/back-button/back-button.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AlertPageRoutingModule
+    AlertPageRoutingModule,
+    BackButtonModule
   ],
   declarations: [AlertPage]
 })

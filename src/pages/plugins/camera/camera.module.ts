@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { CameraPageRoutingModule } from './camera-routing.module';
 
 import { CameraPage } from './camera.page';
+import { BackButtonModule } from 'src/app/back-button/back-button.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CameraPageRoutingModule
+    CameraPageRoutingModule,
+    BackButtonModule
   ],
   declarations: [CameraPage]
 })

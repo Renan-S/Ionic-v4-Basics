@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { TogglePageRoutingModule } from './toggle-routing.module';
 
 import { TogglePage } from './toggle.page';
+import { BackButtonModule } from 'src/app/back-button/back-button.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TogglePageRoutingModule
+    TogglePageRoutingModule,
+    BackButtonModule
   ],
   declarations: [TogglePage]
 })

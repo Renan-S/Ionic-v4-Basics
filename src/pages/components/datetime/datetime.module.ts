@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { DatetimePageRoutingModule } from './datetime-routing.module';
 
 import { DatetimePage } from './datetime.page';
+import { BackButtonModule } from 'src/app/back-button/back-button.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DatetimePageRoutingModule
+    DatetimePageRoutingModule,
+    BackButtonModule
   ],
   declarations: [DatetimePage]
 })

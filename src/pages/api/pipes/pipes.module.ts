@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { PipesPageRoutingModule } from './pipes-routing.module';
 
 import { PipesPage } from './pipes.page';
+import { BackButtonModule } from 'src/app/back-button/back-button.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PipesPageRoutingModule
+    PipesPageRoutingModule,
+    BackButtonModule
   ],
   declarations: [PipesPage]
 })

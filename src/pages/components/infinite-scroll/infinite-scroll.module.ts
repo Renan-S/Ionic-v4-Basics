@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { InfiniteScrollPageRoutingModule } from './infinite-scroll-routing.module';
 
 import { InfiniteScrollPage } from './infinite-scroll.page';
+import { BackButtonModule } from 'src/app/back-button/back-button.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    InfiniteScrollPageRoutingModule
+    InfiniteScrollPageRoutingModule,
+    BackButtonModule
   ],
   declarations: [InfiniteScrollPage]
 })

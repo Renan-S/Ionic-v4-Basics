@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { SearchbarPageRoutingModule } from './searchbar-routing.module';
 
 import { SearchbarPage } from './searchbar.page';
+import { BackButtonModule } from 'src/app/back-button/back-button.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SearchbarPageRoutingModule
+    SearchbarPageRoutingModule,
+    BackButtonModule
   ],
   declarations: [SearchbarPage]
 })

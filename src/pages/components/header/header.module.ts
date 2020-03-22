@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { HeaderPageRoutingModule } from './header-routing.module';
 
 import { HeaderPage } from './header.page';
+import { BackButtonModule } from 'src/app/back-button/back-button.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HeaderPageRoutingModule
+    HeaderPageRoutingModule,
+    BackButtonModule
   ],
   declarations: [HeaderPage]
 })

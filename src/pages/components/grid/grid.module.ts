@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { GridPageRoutingModule } from './grid-routing.module';
 
 import { GridPage } from './grid.page';
+import { BackButtonModule } from 'src/app/back-button/back-button.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    GridPageRoutingModule
+    GridPageRoutingModule,
+    BackButtonModule
   ],
   declarations: [GridPage]
 })

@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { SegmentPageRoutingModule } from './segment-routing.module';
 
 import { SegmentPage } from './segment.page';
+import { BackButtonModule } from 'src/app/back-button/back-button.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SegmentPageRoutingModule
+    SegmentPageRoutingModule,
+    BackButtonModule
   ],
   declarations: [SegmentPage]
 })

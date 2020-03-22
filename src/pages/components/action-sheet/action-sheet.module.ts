@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ActionSheetPageRoutingModule } from './action-sheet-routing.module';
 
 import { ActionSheetPage } from './action-sheet.page';
+import { BackButtonModule } from 'src/app/back-button/back-button.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ActionSheetPageRoutingModule
+    ActionSheetPageRoutingModule,
+    BackButtonModule
   ],
   declarations: [ActionSheetPage]
 })

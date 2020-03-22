@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { PopoverPageRoutingModule } from './popover-routing.module';
 
 import { PopoverPage } from './popover.page';
+import { BackButtonModule } from 'src/app/back-button/back-button.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PopoverPageRoutingModule
+    PopoverPageRoutingModule,
+    BackButtonModule
   ],
   declarations: [PopoverPage]
 })
