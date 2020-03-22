@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ngclass.page.scss'],
 })
 export class NgclassPage implements OnInit {
+  public css : string = '';
+  public condition : boolean = false;
 
   constructor() { }
 

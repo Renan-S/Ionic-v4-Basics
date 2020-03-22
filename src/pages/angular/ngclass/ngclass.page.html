@@ -1,10 +1,16 @@
 <ion-header>
   <ion-toolbar>
     <app-back-button></app-back-button>
-    <ion-title>ngclass</ion-title>
+    <ion-title>ngClass</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-button (click)="css = 'bold'">Bold</ion-button>
+  <ion-button (click)="css = 'font-red'">Red</ion-button>
+  <ion-button (click)="css = 'italic'">Italic</ion-button>
+  <ion-button (click)="condition = !condition">Conditional</ion-button>
+  <h1 [ngClass]="css">Using ngClass</h1>
+  <h2 [ngClass]="['bold', 'font-red', 'italic']">All the CSS</h2>
+  <h3 [ngClass]="{'font-red bold': condition, 'italic bold': !condition}">With conditions</h3>
 </ion-content>

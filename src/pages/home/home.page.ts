@@ -15,7 +15,7 @@ export class HomePage {
     { titulo: "NgIf", pagina: "NgIfPage" },
     { titulo: "NgFor", pagina: "NgForPage" },
     { titulo: "NgSwitch", pagina: "NgSwitchPage" },
-    { titulo: "Ngclass", pagina: "NgClassPage" },
+    { titulo: "NgClass", pagina: "NgClassPage" },
     { titulo: "Form", pagina: "FormPage" }
   ];
 
