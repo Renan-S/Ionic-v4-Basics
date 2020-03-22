@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-buttons',
@@ -8,13 +7,9 @@ import { NavController } from '@ionic/angular';
 })
 export class ButtonsPage implements OnInit {
 
-  constructor(public navCtrl: NavController) { }
+  constructor( ) { }
 
   ngOnInit() {
-  }
-
-  backHome() {
-    this.navCtrl.back()
   }
 
 }

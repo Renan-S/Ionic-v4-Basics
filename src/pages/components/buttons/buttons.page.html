@@ -1,10 +1,24 @@
 <ion-header>
   <ion-toolbar>
     <app-back-button></app-back-button>
-    <ion-title>buttons</ion-title>
+    <ion-title>Buttons</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-button color="success">Success</ion-button><br>
+  <ion-button expand="full">Full</ion-button>
+  <ion-button  expand="block">Block</ion-button>
+  <ion-button shape="round">Round</ion-button><br>
+  <ion-button  fill="outline" size="small">Outline</ion-button><br>
+  <ion-button  fill="clear" size="large">Clear</ion-button><br>
+  <ion-button disabled color="warning">Disabled</ion-button><br>
+  
+  <ion-button download href="yourdownload">
+    <ion-icon icon=download slot="start"></ion-icon>
+  Download</ion-button><br>
 
+    <ion-button fill="clear">
+      <ion-icon slot="icon-only" icon="aperture-outline"></ion-icon>
+    </ion-button>
 </ion-content>
