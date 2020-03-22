@@ -1,10 +1,18 @@
 <ion-header>
   <ion-toolbar>
     <app-back-button></app-back-button>
-    <ion-title>ngfor</ion-title>
+    <ion-title>ngFor</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
+  <ion-button *ngFor="let number of array">{{ number }}</ion-button>
+
+  <ion-card *ngFor="let person of objArray; let i = index">{{i}} ) {{ person.name }} {{ person.surName }} 
+    {{ (person.grades[3] + person.grades[3])/3 }}
+    <p *ngFor="let grade of person.grades"> {{ grade*2 }}</p>
+  </ion-card>
+
 </ion-content>
+

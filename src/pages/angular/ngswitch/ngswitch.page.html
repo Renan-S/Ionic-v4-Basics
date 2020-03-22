@@ -7,4 +7,15 @@
 
 <ion-content>
 
+  <ion-button (click)="user = 'User'">User</ion-button>
+  <ion-button (click)="user = 'Admin'">Admin</ion-button>
+  <ion-button (click)="user = 'Guest'">Guest</ion-button>
+  <ion-button (click)="user = ''">Default</ion-button>
+
+  <div [ngSwitch]="user">
+      <div *ngSwitchCase="'User'">User logged</div>
+      <div *ngSwitchCase="'Admin'">Admin logged</div>
+      <div *ngSwitchCase="'Guest'">Guest logged</div>
+      <div *ngSwitchDefault>Welcome!</div>
+  </div>
 </ion-content>

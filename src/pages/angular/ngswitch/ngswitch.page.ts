@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ngswitch.page.scss'],
 })
 export class NgswitchPage implements OnInit {
+  public user: string = '';
 
   constructor() { }
 
