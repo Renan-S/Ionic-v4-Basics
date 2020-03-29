@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-badges-chips',
@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BadgesChipsPage implements OnInit {
 
+  
+  public friendsNum: number = Math.floor(Math.random()*10);
+
   constructor() { }
 
   ngOnInit() {
   }
-
 }

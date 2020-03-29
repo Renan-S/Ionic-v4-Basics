@@ -1,10 +1,33 @@
 <ion-header>
   <ion-toolbar>
     <app-back-button></app-back-button>
-    <ion-title>badges-chips</ion-title>
+    <ion-title>Badges and Chips</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-item class="overflow" mode="ios">
+    <ion-icon name="logo-facebook"></ion-icon>
+    <ion-label>Friends</ion-label>
+    <ion-badge [color]="friendsNum > 5 ? 'danger':'success'">{{ friendsNum }}</ion-badge>
+  </ion-item><br>
 
+  <ion-chip>
+    <ion-label>Default</ion-label>
+  </ion-chip><br>
+
+  <ion-chip *ngIf="!show" color="primary" mode="ios" outline="true">
+    <ion-icon name="pin" color="dark"></ion-icon>
+    <ion-label>Localization</ion-label>
+    <ion-icon name="close-circle" (click)="show = !show"></ion-icon>
+  </ion-chip><br>
+
+  <ion-chip>
+    <ion-avatar>
+      <img
+        src="https://img2.gratispng.com/20180401/wjw/kisspng-aang-katara-sokka-korra-avatar-aang-5ac1844cc330c6.9800009515226317567995.jpg"
+        alt="Avatar" />
+    </ion-avatar>
+    <ion-label>Aang</ion-label>
+  </ion-chip><br>
 </ion-content>
