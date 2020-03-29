@@ -1,10 +1,28 @@
 <ion-header>
   <ion-toolbar>
     <app-back-button></app-back-button>
-    <ion-title>grid</ion-title>
+    <ion-title>Grid</ion-title>
   </ion-toolbar>
 </ion-header>
 
+<!-- Break points
+Lg - 992 ~ 1199px
+Md - 768 ~ 991px
+Sm - 576 ~ 767px
+Xl - 1200 ~ ...px
+Xs - 0 ~ 575px -->
+
 <ion-content>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="2">Col 1</ion-col>
+      <ion-col size="5">Col 2</ion-col>
+      <ion-col size="2" offset="3">Col 3</ion-col>
+    </ion-row>
+    <ion-row class="ion-wrap-reverse">
+      <ion-col size="12" size-sm="6" size-md="8" size-lg="4" size-xl="2">Col 1</ion-col>
+      <ion-col size="12" size-sm="6" size-md="8" size-lg="4" size-xl="2">Col 2</ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>
