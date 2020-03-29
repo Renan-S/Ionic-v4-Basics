@@ -1,0 +1,55 @@
+ion-content {
+    text-align: initial;
+}
+
+ion-card-header {
+
+    display: inline !important;
+
+    h2 {
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        bottom: 45%;
+    }
+    
+    p {
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        top: 58%;
+        right: 39%;
+    }
+    
+    ion-note {
+        position: absolute;
+        top: 0%;
+        right: 4%;
+    }
+}
+
+.card-img {
+    position: relative;
+    text-align: center;
+}
+
+.blur {
+    filter: blur(1px);
+}
+
+.card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 3rem;
+    width: 100%;
+    font-weight: bold;
+    color: white;
+}
+
+.card-subtitle {
+    position: absolute;
+    top: 60%;
+    font-size: 1.5rem;
+    width: 100%;
+    color: white;
+}

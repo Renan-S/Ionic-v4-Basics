@@ -1,10 +1,85 @@
 <ion-header>
   <ion-toolbar>
     <app-back-button></app-back-button>
-    <ion-title>cards</ion-title>
+    <ion-title>Cards</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Awesome Title</ion-card-title>
+      <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+    </ion-card-header>
 
+    <ion-card-content>
+      <ion-list *ngFor="let x of [0,1,2,3,4,5]">
+        <ion-button>
+          <ion-icon slot="start" name="star"></ion-icon>
+          Favorite
+        </ion-button>
+      </ion-list>
+    </ion-card-content>
+  </ion-card><br>
+
+  <ion-card>
+    <img
+      src="https://drscdn.500px.org/photo/8771559/q%3D80_m%3D1500/v2?sig=1e603a657ac79eaac508a5ff1c6fd5eab0adce873cfb5b5f86b5a720201a4d4b"
+      alt="laughing cat">
+  </ion-card>
+  <ion-card-content>
+    <h2>White cat</h2>
+    <p>This is a white cat laughing very hard</p>
+  </ion-card-content><br>
+
+  <ion-card class="card-img">
+    <ion-img class="blur"
+      src="https://www.diariodepernambuco.com.br/static/app/noticia_127983242361/2015/09/30/600950/20150930143329643388a.jpg"
+      alt="Recife"></ion-img>
+    <div class="card-title">Recife</div>
+    <div class="card-subtitle">Veneza brasileira</div>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header style="display: block;">
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://img2.gratispng.com/20180401/wjw/kisspng-aang-katara-sokka-korra-avatar-aang-5ac1844cc330c6.9800009515226317567995.jpg" />
+        </ion-avatar>
+        <h2>Aang</h2>
+        <p>XX/XX/0012</p>
+        <ion-note>
+          My birthday!
+        </ion-note>
+      </ion-item>
+      </ion-card-header>
+
+    <ion-card-content>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec dui lobortis, sodales mauris et, mattis velit.
+      Nulla cursus arcu est,
+      eu ornare metus sollicitudin sit amet. Pellentesque malesuada, tortor eget lobortis ultrices, dui nisl suscipit
+      quam, id sagittis mauris felis ac est.
+      unc porta nibh sit amet sem efficitur.
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <ion-button fill="clear" size="small" color="danger">
+          <ion-icon size="small" slot="start" name="trash"></ion-icon>
+          Exclude
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button fill="clear" size="small" color="secondary">
+          <ion-icon size="small" slot="start" name="text"></ion-icon>
+          4 comments
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button fill="clear" size="small">
+          <ion-icon size="small" slot="icon-only" name="options-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
 </ion-content>

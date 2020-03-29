@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cards.page.scss'],
 })
 export class CardsPage implements OnInit {
+  public day: number = Math.floor(Math.random()*30);
+  public month: number = Math.floor(Math.random()*12);
+
+
 
   constructor() { }
 
