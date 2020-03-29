@@ -140,7 +140,6 @@ export class AlertPage implements OnInit {
       buttons: [
         {
           text: 'Ok',
-          cssClass: 'success',
           handler: data => {
             console.log(data);
           }
@@ -148,9 +147,9 @@ export class AlertPage implements OnInit {
         {
           text: 'Cancel',
           role: 'cancel',
-          cssClass: 'warning'
         },
       ],
+      cssClass: 'invert',
     })
     await checkAlert.present()
   }
